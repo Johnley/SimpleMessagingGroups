@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[AddressesInGroups]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [AddressID] INT NULL, 
     [GroupID] INT NULL, 
     CONSTRAINT [FK_AddressesInGroups_AddressBook] FOREIGN KEY ([AddressID]) REFERENCES [AddressBook]([Id]), 

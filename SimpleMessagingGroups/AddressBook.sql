@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[AddressBook]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] VARCHAR(50) NULL, 
     [Email] VARCHAR(100) NULL, 
     [Phone] NCHAR(10) NULL, 

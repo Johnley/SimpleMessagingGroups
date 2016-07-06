@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[MessagingGroups]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [Name] VARCHAR(50) NULL, 
     [Owner] INT NULL, 
     [SendEmails] BIT NOT NULL DEFAULT 1, 
